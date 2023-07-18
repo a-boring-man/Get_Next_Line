@@ -1,5 +1,7 @@
 # Get_Next_Line
 
+![](https://github.com/a-boring-man/Get_Next_Line/blob/main/125_score_icon.png)
+
 A early 42 school project
 
 the goal was to create a function that read a file one line at a time with a buffer size of variable lenght.
