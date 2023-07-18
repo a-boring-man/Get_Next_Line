@@ -2,17 +2,12 @@
 
 ![](https://github.com/a-boring-man/Get_Next_Line/blob/main/125_score_icon.png)
 
-A early 42 school project
+An early 42 school project aimed to teach us how to use static variables by creating a function that read lines from a file one line at a time with a variable-length buffer.
 
-the goal was to create a function that read a file one line at a time with a buffer size of variable lenght.
-The project has for goal to teach use the use of static variable.
+The bonus for this project requires us to only use a single static variable and to be able to operate on multiple file descriptors at a time. I set myself the additional challenge of not using a static structure and doing it using only 3 functions, while of course respecting the 42 norm for function size, number of parameter variable declarations, and so on.
 
-Bonus for this project requir us to use only one static variable and to be able to operate on multiple file descriptor at a time.
+I really like this project. After talking to other people, I realized that my implementation was indeed unique and allowed me to set these additional rules for myself.
 
-I set to myself an additionnal challeng of not using a static structure and doing it using only 3 function while of course respecting the 42 norm for function size and number of parameter variable declaration and so on.
+Most people I spoke with implemented a memcopy to copy the remaining data in the buffer to the beginning of the buffer for the next function call. I changed my reading function to replace read characters with 0s and then skip the necessary number of 0s at the beginning of the call. Even for a small project, different implementations lead to great exchanges.
 
-my thoughs on this project : i realy like it, by talking to other people i realize that my implementation was indeed unique and allow me to set these extrat rule to myself.
-
-Most people implemented a memcopy to copy what was left inside the buffer to the beguinning of it for the next function call, whereas i change my reading function to remplace read caracter by 0 then skipping all 0 until buffer_size at the beguinning of the call. differente implementation lead to great exchange on the project.
-
-for clarity reason I reorganize my none bonus files into more readable code.
+For clarity's sake, I reorganized my non-bonus files into more readable code.
